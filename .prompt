@@ -1,0 +1,9 @@
+RED='\e[0;31m'
+GREEN='\e[0;32m'
+NORMAL='\e[0m'
+
+
+EXIT_CODE='$(if [[ $RETURN = 0 ]]; then echo -ne ""; else echo -ne "\[$RED\]$RETURN\[$NORMAL\] "; fi;)'
+export GIT_PS1_SHOWDIRTYSTATE=true
+export GIT_PS1_SHOWUNTRACKEDFILES=true
+PS1="\[\e[${PROMPT_COLOR:-1;35}m\][\$(date +%H:%M)][\u@\h \w]\[$GREEN\]\$(__git_ps1)\[$NORMAL\] \$ $EXIT_CODE"

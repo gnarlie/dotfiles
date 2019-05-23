@@ -1,0 +1,22 @@
+[user]
+	name = Brian Adams
+	email = badams@gnarlie.com
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    rull = pull --rebase
+
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[core]
+	excludesfile = /home/badams/.gitignore_global
+[diff]
+	tool = meld
+[push]
+	default = simple
