@@ -78,24 +78,19 @@ execute vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 if v:version >= 703
-    Plugin 'Valloric/YouCompleteMe'
+    Plugin 'dense-analysis/ale'
 endif
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'fholgado/minibufexpl.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'ternjs/tern_for_vim'
-Plugin 'digitaltoad/vim-pug'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'pangloss/vim-javascript'
 execute vundle#end()
 
 nmap <M-.> :bp<CR>
 nmap <M-,> :bn<CR>
 nmap <M-b> :MBEToggleAll<CR>
-
-map <F7> :YcmCompleter GoTo<CR>
 
 map <leader>m :MBEOpen<CR>:MBEFocus<CR>
 
